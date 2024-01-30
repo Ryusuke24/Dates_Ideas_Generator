@@ -1,0 +1,21 @@
+.App {
+  background-image: url("./images/background.png");
+  height: 100vh;
+  display: grid;
+  grid-template-rows: 1fr 150px;
+  grid-template-areas:
+    "main"
+    "footer";
+}
+
+.main {
+  grid-area: main;
+  height: calc(100vh - 150px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer {
+  grid-area: footer;
+}
